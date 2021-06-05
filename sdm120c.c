@@ -59,14 +59,14 @@ extern "C" {
 // Read
 #define VOLTAGE   0x0000
 #define CURRENT   0x0008
-#define POWER     0x000C
+#define POWER     0x0012    
 #define APOWER    0x0012
-#define RAPOWER   0x0018
-#define PFACTOR   0x001E
+#define RAPOWER   0x001A
+#define PFACTOR   0x002A
 #define PANGLE    0x0024
-#define FREQUENCY 0x0046
-#define IAENERGY  0x0048
-#define EAENERGY  0x004A
+#define FREQUENCY 0x0036
+#define IAENERGY  0x0100
+#define EAENERGY  0x0400
 #define IRAENERGY 0x004C
 #define ERAENERGY 0x004E
 #define TAENERGY  0x0156
