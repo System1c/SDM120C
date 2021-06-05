@@ -58,7 +58,7 @@ extern "C" {
 
 // Read
 #define VOLTAGE   0x0000
-#define CURRENT   0x0006
+#define CURRENT   0x0008
 #define POWER     0x000C
 #define APOWER    0x0012
 #define RAPOWER   0x0018
