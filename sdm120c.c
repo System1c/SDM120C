@@ -65,11 +65,11 @@ extern "C" {
 #define PFACTOR   0x002A
 #define PANGLE    0x0024
 #define FREQUENCY 0x0036
-#define IAENERGY  0x0100
+#define IAENERGY  0x0048
 #define EAENERGY  0x0400
 #define IRAENERGY 0x004C
 #define ERAENERGY 0x004E
-#define TAENERGY  0x0156
+#define TAENERGY  0x0100
 #define TRENERGY  0x0158
 
 // Write
@@ -1656,18 +1656,18 @@ int main(int argc, char* argv[])
        // if no parameter, retrieve all values
         power_flag   = 1;
         apower_flag  = 1;
-        rapower_flag = 1;
+        rapower_flag = 0;
         volt_flag    = 1;
         current_flag = 1;
-        pangle_flag  = 1;
+        pangle_flag  = 0;
         freq_flag    = 1;
         pf_flag      = 1;
-        export_flag  = 1;
-        import_flag  = 1;
+        export_flag  = 0;
+        import_flag  = 0;
         total_flag   = 1;
-        rexport_flag  = 1;
-        rimport_flag  = 1;
-        rtotal_flag   = 1;
+        rexport_flag  = 0;
+        rimport_flag  = 0;
+        rtotal_flag   = 0;
         count_param  = power_flag + apower_flag + rapower_flag + volt_flag + 
                        current_flag + pangle_flag + freq_flag + pf_flag + 
                        export_flag + import_flag + total_flag +
